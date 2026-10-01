@@ -1,10 +1,10 @@
 def box_print(symbol, width, height):
     if len(symbol) != 1:
-      ❶ raise Exception('Symbol must be a single character string.')
+        raise Exception('Symbol must be a single character string.')
     if width <= 2:
-      ❷ raise Exception('Width must be greater than 2.')
+       ❷raise Exception('Width must be greater than 2.')
     if height <= 2:
-      ❸ raise Exception('Height must be greater than 2.')
+      ❸raise Exception('Height must be greater than 2.')
 
     print(symbol * width)
     for i in range(height - 2):
@@ -22,3 +22,4 @@ try:
     box_print('ZZ', 3, 3)
 except Exception as err:
     print('An exception happened: ' + str(err))
+# this make it work for whatever reason it is
