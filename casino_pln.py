@@ -34,3 +34,7 @@ dag = {
     'read': lambda: read_code()
 }
 
+# Execute the pipeline
+if __name__ == "__main__":
+    updated_code = dag['read']()
+    print(updated_code) 
