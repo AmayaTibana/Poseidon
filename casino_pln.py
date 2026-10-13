@@ -42,3 +42,7 @@ if __name__ == "__main__":
 #making a dag for the pipeline process 
 
 # another try  
+
+def another_try():
+    updated_code = dag['read']()
+    print(updated_code)
