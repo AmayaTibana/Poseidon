@@ -1,4 +1,4 @@
-# Pipeline process
+ear Pipeline process
 
 # Extract process
 def extract_code():
@@ -38,3 +38,6 @@ dag = {
 if __name__ == "__main__":
     updated_code = dag['read']()
     print(updated_code) 
+
+#making a dag for the pipeline process 
+
