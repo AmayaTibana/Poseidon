@@ -85,10 +85,19 @@ def seconds_to_minutes(seconds):
 
     HINT: //  %  and f-strings ( f"{x:02d}" pads with a zero )
     """
+    minutes = seconds // 60
+    remaining = seconds % 60
+    return f"{minutes}:{remaining:02d}"
     raise NotImplementedError
 
 
 def classify_duration(seconds):
+    if seconds < 120:
+        return "short"
+    elif seconds >= 120 and seconds <= 300:
+        return "normal"
+    else:
+        return "long"
     """
     TASK 2: Label a song by length.
       under 120 seconds         -> "short"
@@ -108,8 +117,15 @@ def classify_duration(seconds):
     raise NotImplementedError
 
 
+
 def count_vowels(text):
+    count = 0
+    for char in text.lower():
+        if char in "aeiou":
+            count += 1
+    return count 
     """
+    
     TASK 3: Count the vowels (a, e, i, o, u) in text, ignoring upper/lower case.
       count_vowels("Bad Bunny") -> 2
 
