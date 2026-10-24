@@ -87,7 +87,7 @@ def seconds_to_minutes(seconds):
     """
     minutes = seconds // 60
     remaining = seconds % 60
-    return f"{minutes}:{remaining:02d}"
+    return f"{minutes}:{remaining:02d}" #Explain what this line does #copilot do it
     raise NotImplementedError
 
 
@@ -146,6 +146,14 @@ def count_vowels(text):
 # ==============================================================================
 
 def unique_in_order(items):
+    seen = set[]
+    result = []
+    for item in items:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
+    
     """
     TASK 4: Remove duplicates but KEEP the original order.
       unique_in_order(["pop", "rock", "pop", "jazz"]) -> ["pop", "rock", "jazz"]
@@ -161,7 +169,9 @@ def unique_in_order(items):
       RETURN result
 
     HINT: set(), .add(), .append()
+    
     """
+
     raise NotImplementedError
 
 
