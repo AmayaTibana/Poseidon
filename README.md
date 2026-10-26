@@ -1,9 +1,9 @@
-# casino
-🎰 Casino
+# Poseidon
+Poseidon
 
 A personal collection of artisanal code.
 
-Welcome to casino, my personal space for saving coding ideas, experiments, and little pieces of code I write while learning.
+Welcome to poseidon, my personal space for saving coding ideas, experiments, and little pieces of code I write while learning.
 
 This repository isn’t a project, a portfolio piece, or something intended for public review. It’s simply a place where I keep my ideas and test what I’m learning through hands-on coding.
 
