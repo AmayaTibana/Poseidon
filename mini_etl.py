@@ -176,6 +176,13 @@ def unique_in_order(items):
 
 
 def count_by(items):
+    
+    counts = []
+    for item in items:
+        if item in counts:
+            counts[item] += 1
+        else:
+            counts[item] = 1
     """
     TASK 5: Count how many times each value appears.
       count_by(["pop", "rock", "pop"]) -> {"pop": 2, "rock": 1}
